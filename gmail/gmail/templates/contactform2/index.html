@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width,initial">
+        <title>Document</title>
+    </head>
+</body>
+<div class="container">
+    <form action="" method="POST" class="contact-form">
+        {% crf_token %}
+        <div class="form-control">
+            <div class="tag">Full Name</div>
+            <input type="text" name="full-name">
+        </div>
+        <div class="form-control">
+            <div class="tag">Email</div>
+
+                <input type="text" name="email">
+
+
+            </div>
+            <div class="form-control">
+                <div class="tag">Subject</div>
+                    <input type="text" name="subject">
+    
+    
+                </div>
+                <div class="form-control">
+                    <div class="tag">Message</div>
+        
+                        <textarea name="message" cols="30" rows="10"></textarea>
+                        </div>
+                        
+        </div>
+    </form>
+</div>
+</html>
